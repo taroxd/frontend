@@ -346,20 +346,6 @@ function LoginForm() {
                             </form>
                         )}
                         <Divider />
-                        <div className={classes.link}>
-                            <div>
-                                <Link component={RouterLink} to={"/forget"}>
-                                    {t("login.forgetPassword")}
-                                </Link>
-                            </div>
-                            <div>
-                                {registerEnabled && (
-                                    <Link component={RouterLink} to={"/signup"}>
-                                        {t("login.signUpAccount")}
-                                    </Link>
-                                )}
-                            </div>
-                        </div>
                     </Paper>
 
                     {authn && (

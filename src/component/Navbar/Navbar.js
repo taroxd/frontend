@@ -506,22 +506,6 @@ class NavbarCompoment extends Component {
                                     className={classes.iconFix}
                                 />
                             </ListItemIcon>
-                            <ListItemText primary={t("login.signIn")} />
-                        </ListItem>
-                        {this.props.registerEnabled && (
-                            <ListItem
-                                button
-                                key="注册"
-                                onClick={() =>
-                                    this.props.history.push("/signup")
-                                }
-                            >
-                                <ListItemIcon>
-                                    <AccountPlus className={classes.iconFix} />
-                                </ListItemIcon>
-                                <ListItemText primary={t("login.signUp")} />
-                            </ListItem>
-                        )}
                     </div>
                 )}
             </div>

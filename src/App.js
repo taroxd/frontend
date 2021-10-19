@@ -186,14 +186,6 @@ export default function App() {
                                 <LoginForm />
                             </NoAuthRoute>
 
-                            <NoAuthRoute
-                                exact
-                                path={`${path}signup`}
-                                isLogin={isLogin}
-                            >
-                                <Register />
-                            </NoAuthRoute>
-
                             <Route path={`${path}activate`} exact>
                                 <Activation />
                             </Route>
